@@ -5,8 +5,9 @@ log = logger
 # <green>{time:YYYY-MM-DD HH:mm:ss.SSS}</green> | <level>{level: <8}</level> | <cyan>{name}</cyan>:<cyan>{function}</cyan>:<cyan>{line}</cyan> - <level>{message}</level>
 # default format for loguru
 
-# logger.remove(0) # Remove default logger (level="DEBUG")
+logger.remove(0) # Remove default logger (level="DEBUG")
 # logger.add(sys.stderr,level="TRACE") # re add default logged but level="TRACE"
+logger.add(sys.stderr,level="SUCCESS") # re add default logged but level="TRACE"
 
 # logger.level("test",no=1)
 
