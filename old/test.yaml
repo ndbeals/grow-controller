@@ -1,0 +1,43 @@
+inps:
+  - device:
+      a: hi
+      b: bye
+
+services:
+  db:
+    image: mysql:5.7
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: somewordpress
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+
+
+inps:
+  - device:
+      a: hi
+      b: bye
+      c: 7
+  - device:
+      a: a
+      b: b
+  - adevice:
+    device:
+      a: a
+      b: b
+
+t:
+  - a: a
+    b: b
+    c: c
+  # - b: b
+
+tt:
+  - 
+    a: a
+  # - 
+  #   b: b
+  # - c: c
