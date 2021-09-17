@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "grow"
+version = "0.1.0"
+description = ""
+authors = ["Nathan Beals <850796+ndbeals@users.noreply.github.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+schedule = "^1.1.0"
+gpiozero = "^1.6.2"
+adafruit-circuitpython-dht = "^3.6.1"
+loguru = "^0.5.3"
+adafruit-circuitpython-ads1x15 = "^2.2.8"
+Adafruit-Blinka = "^6.13.0"
+"RPi.GPIO" = "^0.7.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
